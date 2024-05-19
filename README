@@ -1,0 +1,19 @@
+1. apilearning4all folder
+The apilearning4all folder must be hosted in xampp in the htdocs folder so that both the images and the API can be accessed from the server
+
+2. configure phpmyadmin database
+The query that comes in the apilearning4all folder must be loaded in phpmyadmin so that the database is working locally
+
+3. API Test
+It must be entered through the local server path to validate if the api.php file is bringing the Json without problems, the default path is: http://localhost/apilearning4all/api.php
+When you enter this url in the browser, the Json should appear.
+
+4. npm install
+Run this command from cmd in the folder where the project is located to load the libraries and dependencies
+
+5. npx expo start
+
+in case of noty working : 
+
+npm install -g react-native-cli 
+

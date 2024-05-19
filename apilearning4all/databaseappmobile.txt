@@ -1,0 +1,47 @@
+CREATE DATABASE mycoursesdb;
+
+
+USE mycoursesdb;
+
+
+CREATE TABLE courses (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  title VARCHAR(255) NOT NULL,
+  description VARCHAR(255),
+  instructor VARCHAR(255),
+  duration INT,
+  level VARCHAR(50),
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  image VARCHAR(255),
+  information TEXT
+);
+
+
+
+-- INSERT actualizado con información adicional
+
+INSERT INTO courses (title, description, instructor, duration, level, image, information) VALUES
+('React Native Para Principiantes', 'Aprende lo básico de React Native', 'Andres Lopera', 120, 'Beginner', 'http://192.168.1.2/apilearning4all/images/react_native.png', 'En este curso aprenderás los conceptos fundamentales de React Native, incluyendo la creación de componentes, el manejo de estado, el enrutamiento de la aplicación y la interacción con APIs externas. Además, explorarás las mejores prácticas y patrones de diseño para el desarrollo de aplicaciones móviles.),
+
+('React Native Avanzado', 'Conceptos avanzados de React Native', 'Camilo Sanchez', 180, 'Advanced', 'http://192.168.1.2/apilearning4all/images/react_native_advance.jpg', 'Este curso está diseñado para desarrolladores que ya tienen experiencia con React Native y desean profundizar en temas como la optimización del rendimiento, la gestión del estado global, la integración con APIs complejas y la implementación de funcionalidades avanzadas como notificaciones push y autenticación.'),
+
+('JavaScript Básico', 'Entendiendo los fundamentos de JavaScript', 'Emily Perez', 90, 'Beginner', 'http://192.168.1.2/apilearning4all/images/js.jpg', 'Este curso te introducirá en los conceptos básicos de JavaScript, incluyendo variables, tipos de datos, estructuras de control, funciones, objetos y eventos. Aprenderás a escribir código JavaScript limpio y eficiente, así como a utilizar las herramientas de desarrollo y depuración para resolver problemas comunes.'),
+
+('Desarrollo Full Stack', 'Conviértete en un desarrollador full stack con React y Node.js', 'Michael Brown', 240, 'Intermediate', 'http://192.168.1.2/apilearning4all/images/fullstack.jpg', 'En este curso aprenderás a desarrollar aplicaciones web completas utilizando React para el frontend y Node.js para el backend. Aprenderás a crear componentes reutilizables, gestionar el estado de la aplicación, interactuar con APIs RESTful, implementar autenticación de usuarios y mucho más.'),
+
+('Universidad Front-end', 'Conviértete en un desarrollador Front-end con React', 'Michael Brown', 240, 'Beginner', 'http://192.168.1.2/apilearning4all/images/react.png', 'Este curso te enseñará las habilidades necesarias para convertirte en un desarrollador Front-end profesional, utilizando tecnologías como React, HTML, CSS y JavaScript. Aprenderás a construir interfaces de usuario interactivas y receptivas, gestionar el estado de la aplicación de manera efectiva y optimizar el rendimiento de tus aplicaciones web.);
+
+('Php Básico', 'Aprende lo básico de Php', 'Michael Brown', 240, 'Beginner', 'http://192.168.1.2/apilearning4all/images/php.jpg', 'En este curso aprenderás los fundamentos de PHP, incluyendo la sintaxis del lenguaje, el manejo de formularios, la conexión con bases de datos MySQL y la creación de aplicaciones web dinámicas. Aprenderás a escribir código PHP limpio y seguro, así como a utilizar frameworks como Laravel para acelerar el desarrollo de tus proyectos.'),
+
+
+('Universidad Back-end', 'Conviértete en un desarrollador Back-end con Laravel y Node.js', 'Michael Brown', 240, 'Beginner', 'http://192.168.1.2/apilearning4all/images/laravel.jpg', 'En este curso aprenderás a desarrollar aplicaciones web dinámicas y escalables utilizando Laravel para PHP y Node.js para JavaScript. Aprenderás a construir APIs RESTful, autenticar usuarios, gestionar sesiones y cookies, interactuar con bases de datos relacionales y no relacionales, y mucho más.'),
+
+
+('HTML-Css-Bootstrap', 'Aprende lo básico de HTML, CSS y Bootstrap', 'Michael Brown', 240, 'Beginner', 'http://192.168.1.2/apilearning4all/images/html.jpg', 'Este curso te enseñará los conceptos básicos de HTML y CSS, así como cómo utilizar el framework Bootstrap para crear sitios web responsivos y atractivos. Aprenderás a estructurar el contenido de una página web, aplicar estilos y diseños personalizados, y utilizar componentes predefinidos de Bootstrap para mejorar la apariencia y la usabilidad de tus sitios web.');
+
+
+
+//Ruta donde se alojaron las imágenes:
+//C:\xampp\htdocs\apilearning4all\images
+//http://192.168.1.2/api-learning4all/images/react_native.png
+

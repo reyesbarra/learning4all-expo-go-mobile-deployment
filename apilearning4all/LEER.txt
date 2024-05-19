@@ -1,0 +1,3 @@
+Esta carpeta debe ir en XAMPP en la carpeta htdocs para que las imágenes y la api queden expuestas por el servidor apache
+
+El query adjunto es para ejecutarlo en phpmyadmin
